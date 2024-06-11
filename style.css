@@ -1,0 +1,346 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300, 400');/*sherben per te marre fonte ne internet me ane te linkimit nga google apis*/
+/*klasat qe kam krijuar neper filet e html i kam perdorut te css per te stiluar website*/
+
+* {  /*perdorimi i * tregon se kodi do aplikohet ne te gjithe elementet*/
+box-sizing: border-box;
+font-family: Raleway;
+color:#777;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+}
+.nav ul {
+    margin: 0;/*heq hapesiren ndermjet elementeve te diveve te ndryshme*/
+}
+
+.nav li {
+    display: inline;/*shfaq elementet ne te njejten line*/
+
+}
+.nav a {
+    display: inline-block;/*elementet mund te marrin edhe veti te block,pra te shfaqen si inline dhe block*/
+    padding: .5em;/*krijon hapesire nje elementi me elementet e tjere te cilet psh ndodhen ne nje div*/
+    color: white;/*i jep ngjyre te bardhe tekstit te kesaj klase*/
+    text-decoration: none;/*heq dekorimet e tekstit*/
+}
+.main-nav {
+    text-align: center;/*pozicionon tekstin ne qender*/
+    font-size: 1.1em;/* masa e fontit*/
+    font-weight: lighter;/*trashesia e fontit te main nav do jet e lehte*/
+    border-bottom: 1px solid rgba(255, 255, 255, .3);/*krijon nje vije ne fund*/
+}
+
+.main-nav li {
+    padding: 0 5%;
+}
+
+.nav a:hover {
+    background-color: rgba(255, 255, 255, .3);/*ngjyra e bacgroundit kur te hover ne linqet e navit*/
+}
+.main-header {
+    background-color: rgba(0, 0, 0, .6);
+    background-image:url(Images/backgro.jpg);/*vendos nje img si background te elementit te kapur*/
+    background-blend-mode: multiply ;/*nje menyre per te perzier ngjyrat  e bacground ku shumezohet backg (image me color) dhe del nje ngjyre me e erret*/
+    background-size: cover;/*fotoja ta mbuloje gjithe backgroundin*/
+    padding-bottom: 30px;/*i lem hapesire elementit main header ne fund 30px mga elementet e tjere*/
+}
+
+.band-name {
+    text-align: center;
+    margin: 0;
+    font-size: 4em;
+    font-family: fantasy;/*percaktojme familjen ku ben pjese fonti*/
+    font-weight: normal;
+    color: white;
+
+}
+.band-name-large {
+    font-size: 9em;
+}
+
+.main-content {
+    margin: 1em;
+}
+
+.container {
+    max-width: 900px;/*i japim containerit nje gjeresi maksimale*/
+    margin: 0 auto;
+    padding: 0 1.5em;
+}
+
+.section-header {
+    font-family: fantasy;
+    font-weight: normal;
+    color: #333;
+    text-align: center;
+    font-size: 2.5em;
+   
+}
+
+.about-band-image {
+    float: left; /*fotoja e bandes te shfaqet nga e majta*/
+    width : 200px; 
+    height :200px;
+    margin: 15px;
+    border-radius: 50%; /*te jete rrethore,percakton sa te lakuar do jene cepat e fotos*/
+}
+
+.main-footer {
+    background-color: #04a6f7cc;
+    color: white;
+    padding: .25em 0;
+}
+
+.main-footer-container {
+    display: flex; /*perdorim flex per te shfaqur elementet dhe per ti modifikuar vertikalisht ose horizontalisht*/
+    align-items: center; /*vendos elementet vertikalisht ne qender*/
+}
+
+.main-footer-container ul {
+    flex-grow: 1; /*i jep cdo elementi te flex te njejtenmase*/
+    text-align: end; /*shfaq tekstin ne fund*/
+
+}
+
+.footer-nav li {
+    padding: 0 .5em;
+}
+
+.footer-nav img{
+    width: 30px;
+    height: 30px;
+}
+a{
+    color: blue;
+    text-decoration: none;
+}
+
+.btn{
+    text-align: center;
+    vertical-align: middle; /*e vendos butonin vertikalisht ne mes*/
+    padding: .67em;
+    cursor: pointer;
+}
+.btn-header{
+    margin: .5em 15% 2em 15%;
+    color: white;
+    border: 2px solid #2D9CDB;
+    background-color: rgba(255, 255, 255, .1);
+    border-radius: 0;
+    font-size: 1.5em;
+    font-weight: lighter;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+.btn-header:hover{
+    background-color: rgba(255, 255, 255, .3);
+}
+.btn-play{
+    display: block;
+    margin: 0 auto;
+    color: #2D9CDB;
+    font-size: 4em;
+    border-radius: 50%;
+    padding: 0;
+    width: 100px;
+    height: 100px;
+}
+.tour-row{
+    border-bottom: 1px solid black;
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+}
+.tour-row:last-child{
+    border-bottom: none; /*elementit te fundit ja heq borderin ne fund*/
+}
+.tour-item{
+    display: inline-block;
+    padding-right: .5em;
+}
+.tour-date{
+    color: #555;
+    font-weight: bold;
+    width: 11%;
+}
+.tour-city{
+    width: 24%;
+}
+.tour-arena{
+    width: 42%;
+}
+.tour-btn{
+    max-width: 19%;
+}
+.btn-primary{
+    color: white;
+    background-color: #56CCF2;
+    border: none;
+    border-radius: .3em;
+    font-weight: bold;
+   
+}
+.btn-primary:hover{
+    background-color: #2D9CDB;
+
+}
+.shop-item{
+    margin: 30px;
+}
+.shop-item-title{
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 15px;
+}
+.shop-item-image{
+    height: 250px;
+
+}
+.shop-item-details{
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+.shop-item-price{
+    flex-grow: 1;
+    color: #333;
+}
+.shop-items{
+    display: flex;
+    flex-wrap: wrap;/*mbeshtjell elementet e flex me njeri tjetrin*/
+    justify-content: space-around;/*krijon hapesire ndermjet elementeve horizontalisht*/
+}
+.cart-header{
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #333;
+}
+.cart-column{
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid black;
+    margin-right: 1.5em;
+    padding-bottom: 10px;
+    margin-top: 10px;
+}
+.cart-row{
+    display: flex;
+}
+.cart-item{
+    width: 45%;
+}
+.cart-price{
+    width: 20%;
+    font-size: 1.2em;
+    color: #333;
+
+}
+.cart-quantity{
+    width: 35%;
+
+}
+.cart-item-title{
+    color: #333;
+    margin-left: .5em;
+    font-size: 1.2em;
+}
+.cart-item-image{
+    width: 75px;
+    height: auto;
+    border-radius: 10px;
+}
+.btn-danger{
+    color: white;
+    background-color: #EB5757;
+    border: none;
+    border-radius: .3em;
+    font-weight: bold;
+}
+.btn-danger:hover{
+    background-color: #CC4C4C;
+}
+.cart-quantity-input{
+    height: 35px;
+    width: 50px;
+    border-radius: 5px;
+    border: 1px solid #56CCF2;
+    background-color: #eee;
+    color: #333;
+    padding: 0;
+    text-align: center;
+    font-size: 1.2em;
+    margin-right: 25px;
+}
+.cart-row:last-child{
+    border-bottom: 1px solid black;
+}
+.cart-row:last-child .cart-column{
+    border: none;
+}
+.cart-total{
+    text-align: end;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+.cart-total-title{
+    font-weight: bold;
+    font-size: 1.5em;
+    color: black;
+    margin-right: 20px;
+}
+.cart-total-price{
+    color: #333;
+    font-size: 1.1em;
+
+}
+.btn-purchase{
+    display: block;
+    margin: 40px auto 80px auto;
+    font-size: 1.75em;
+}
+.img-wid-heigh{
+    width: 100px;
+    height: auto;
+}
+/* Per ekrane me madhesi me te vogel se 768px, per tablete dhe me ekrane me te vegjel se to */
+@media (max-width: 768px) {
+    .main-nav {
+        font-size: 1em; /* Pershtat madhesine e fontit per ekrane me te vegjel */
+    }
+    .container {
+        max-width: 90%; /* Pershtat madhesine e container per ekrane me te vegjel */
+    }
+    .about-band-image {
+        float: none; /* Heq opsionin float per ekrane me te vegjel per foton e bandes */
+        margin: 0 auto; /* e vendos img ne qender */
+        display: block;
+    }
+    .tour-row {
+        display: block; /* I pershtat rreshtat e turit vertikalisht */
+    }
+    .tour-item {
+        display: block; /* I pershtat elementet e turit vertikalisht */
+        margin-bottom: 1em;
+    }
+}
+
+/* Per ekrane me madhesi me te vogel se 480px, apo mobile phones) */
+@media (max-width: 480px) {
+    .band-name {
+        font-size: 3em; /* Pershtatet madhesia e fontit te emrit te bandes per ekrane me te vegjel */
+    }
+    .section-header {
+        font-size: 2em; /* Pershtatet madhesia e fontit te headerit te seksionit per ekrane me te vegjel */
+    }
+    .about-band-image {
+        width: 150px; /* Pershtatet gjeresia e imazhit per ekrane me te vegjel*/
+        height: 150px; /*Pershtatet lartesia e imazhit per ekrane me te vegjel */
+    }
+    .shop-item-image {
+        height: 200px; /* Pershtatet lartesia e imazhit te shop item per ekrane me te vegjel */
+    }
+}

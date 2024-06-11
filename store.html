@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>COLDPLAY | STORE</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <link href="style.css" rel="stylesheet"> <!-- lidh file css me html  -->
+        <script src="store.js" async></script> <!--async tregon qe js do behet load ne background nderkoh qe ngarkohet body i html,lidhim html me javascriptin-->
+    </head>
+    <body>
+        <header class="main-header">
+            <nav class="nav main-nav"><!--me ane te tagut nav krijoj menune e navigimit te website-->
+               <ul>
+                   <li><a href="index.html">HOME</a></li>
+                   <li><a href="store.html">STORE</a></li>
+                   <li><a href="about.html">ABOUT</a></li>
+               </ul>
+             </nav>
+             <h1 class="band-name band-name-large">Coldplay</h1>
+        </header>
+        <main>
+          <section class="content-section container">
+            <h2 class="section-header">MUSIC</h2><!--titulli i seksionit per elementet qe jane pjese e muzikes-->
+            <div class="shop-items"><!--kjo klase perfshin te gjithe produktet per tu shitur te muzikes-->
+            <div class="shop-item"><!--kjo klase perfshin te dhenat e njerit produkt te muzikes te tilla si emri foto cmimi butoni i shtimit ne shporte-->
+                    <span class="shop-item-title">Album 1</span>
+                <img class="shop-item-image" src = "Images/PARACHUTES.jpeg">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">$11.99</span>
+                    <button class="btn btn-primary shop-item-button" type ="button">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="shop-item">
+                    <span class="shop-item-title">Album 2</span>
+                <img class="shop-item-image" src = "Images/AHeadFullOfDreams.jpeg">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">$13.99</span>
+                    <button class="btn btn-primary shop-item-button" type ="button">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="shop-item">
+                    <span class="shop-item-title">Album 3</span>
+                <img class="shop-item-image" src = "Images/LoveInTokyo.jpeg">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">$10.99</span>
+                    <button class="btn btn-primary shop-item-button" type ="button">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="shop-item">
+                    <span class="shop-item-title">Album 4</span>
+                <img class="shop-item-image" src = "Images/MusicOfTheSpheres.jpeg">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">$15.99</span>
+                    <button class="btn btn-primary shop-item-button" type ="button">ADD TO CART</button>
+                </div>
+            </div>
+        </div>
+          </section>
+          <section class="content-section container"><!--krijoj seksionin e dte per produktet qe jane pjese e merch-it,veproj njesoj si me pjesen e produkteve te muzikes-->
+            <h2 class="section-header">MERCH</h2>
+            <div class="shop-items">
+            <div class="shop-item">
+                    <span class="shop-item-title">Hoodie</span>
+                <img class="shop-item-image" src = "Images/Hoodie.jpg">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">$34.99</span>
+                    <button class="btn btn-primary shop-item-button" type ="button">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="shop-item">
+                    <span class="shop-item-title">Cap</span>
+                <img class="shop-item-image" src = "Images/Cap.jpg">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">$10.99</span>
+                    <button class="btn btn-primary shop-item-button" type ="button">ADD TO CART</button>
+                </div>
+            </div>
+            </div>
+          </section>
+          <section class="content-section container"> <!--seksioni i trete lidhet me shtimin e elementeve ne shporte-->
+            <h2 class="section-header">CART</h2><!--emri i seksionit te trete => CART-->
+            <div class="cart-row"> <!--Shton nje rresht dhe emrat cfare do pernbaje ai -->
+                <span class="cart-item cart-header cart-column">ITEM</span>
+                <span class="cart-price cart-header cart-column">PRICE</span>
+                <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+            </div>
+            <div class="cart-items">
+              <!--<div  class="cart-row"> 
+                <div class="cart-item cart-column">
+                    <img class="cart-item-image" src="Images/Hoodie.jpg" width="100" height="100">
+                    <span class="cart-item-title">Hoodie</span>
+                </div>
+                <span class="cart-price cart-column">$34.99</span>
+                <div class="cart-quantity cart-column">
+                <input class="cart-quantity-input" type="number" value="1">
+                <button class="btn btn-danger" type="button">REMOVE</button>
+                </div>
+            </div>
+            <div  class="cart-row">
+                <div class="cart-item cart-column">
+                <img class="cart-item-image" src="Images/MusicOfTheSpheres.jpeg" width="100" height="100">
+                <span class="cart-item-title">Album 4</span>
+                </div>
+                <span class="cart-price cart-column">$15.99</span>
+                <div class="cart-quantity cart-column">
+                <input class="cart-quantity-input" type="number" value="1">
+                <button class="btn btn-danger" type="button">REMOVE</button>
+                </div>*/
+            </div>   ky kod ishte para se te shtoja javascript-in per tu bazuar fillimisht ne menyren se si do shtoheshin elementet ne shporte dhe me pas per te krijuar rreshtin e shportes ne fund dhe hiqet-->
+          </div>
+            <div class="cart-total"><!--kdiv me klasen qe permban totalin-->
+                <strong class="cart-total-title">Total</strong>
+                <span class="cart-total-price">$0</span>
+            </div>
+                <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button><!--krijohet butoni purchase per blerjet-->
+          </section>
+        </main>
+        <footer class="main-footer"><!-- krijojme footerin e website qe do te jete i njejte per te 3 faqet e navigimit-->
+            <div class="container main-footer-container">
+               <h3 class="band-name">Coldplay</h3>
+               <ul class="nav footer-nav">
+                 <li>
+                     <a href="https://www.youtube.com/channel/UCDPM_n1atn2ijUwHd0NNRQw" target="_blank"><!--target ben qe kur klikojme linkun te na hapet ne faqe te re apo new tab-->
+                      <img width ="10% " height = "auto" src = "Images/YouTube.png ">
+                     </a>
+                 </li>
+                 <li>
+                     <a href="https://open.spotify.com/artist/4gzpq5DPGxSnKTe4SA8HAU" target="_blank">
+                         <img width ="10% " height = "auto" src = "Images/spotify.png ">
+                     </a>
+                 </li>
+                 <li>
+                     <a href="https://www.facebook.com/coldplay/" target="_blank">
+                         <img width ="10% " height = "auto" src = "Images/facebook.png">
+                     </a>
+                 </li>
+              </ul>
+           </div>
+        </footer>
+    </body>
+</html>
